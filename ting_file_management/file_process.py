@@ -10,7 +10,7 @@ def process(path_file, instance: Queue):
     file_result = {
         "nome_do_arquivo": path_file,
         "qtd_linhas": len(file_lines),
-        "linhas_do_arquivo": file_lines
+        "linhas_do_arquivo": file_lines,
     }
     instance.enqueue(file_result)
     print(file_result)
